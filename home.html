@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Slide picture
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager>
+    <ion-slide *ngFor = "let Slide of Slides">
+      <img [src] = "Slide.image" />
+      <p Slide.title></p>
+    </ion-slide>
+  </ion-slides>
+
+  <button ion-button (click) = "function01()"> click </button>
+</ion-content>
